@@ -1,37 +1,20 @@
 ---
 layout: default
 ---
-<section class="wrapper style1">
-    <div class="container">
-        <section class="wrapper style1">
-            <div class="container">
-                <header class="major"><h2>{{ page.title }}</h2></header>
+<h1 class="display-5">{{ page.title }}</h1>
+<hr class="my-3">
+<div class="container">
+    <div class="row card-group">
+        <div class="card col-md-4 mx-auto p-3 bg-secondary">
+            <img src="{{ site.baseurl }}{{ page.img }}" alt="{{ page.title }}">
+        </div>
+        <div class="card col-md-4 mx-auto p-3 bg-secondary">
+            {% if page.outline %}
+            <img class="card-img-top" src="{{ site.baseurl }}{{ page.outline }}" alt="{{ page.title }} outline"></img>
+            {% endif %}
+            <div class="card-body p-3">
+                {{ page.content }}
             </div>
-        </section>
-
-            
-            <!--<div class="container">-->
-        <div class="row double major">
-            <!--<div class="12u">-->
-                <section class="6u 12u(mobile)">
-                    <div class="box post">
-                        <a name="drills" data-lightbox="core-drill" href="{{ site.url }}{{ page.img }}">
-                            <img class="product-specs" src="{{ site.url }}{{ page.img }}" alt="">
-                        </a>
-                    </div>
-                </section>
-                <section class="6u 12u(mobile)">
-                    <div class="box post">
-                        {% if page.outline %}
-                        <a name="drills" data-lightbox="core-drill" href="{{ site.url }}{{ page.outline }}">
-                            <img class="product-specs" src="{{ site.url }}{{ page.outline }}" alt="">
-                        </a>
-                        {% endif %}
-                        <p>
-                            {{ page.content }}
-                        </p>
-                    </div>
-                </section>
-            </div>
-		</div>
-</section>
+        </div>
+    </div>
+</div>
