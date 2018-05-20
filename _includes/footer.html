@@ -2,36 +2,26 @@
 <div class="py-5 border-top">
   <div class="container">
 
-    <p class="h5 mb-3">{{ site.title | escape }}</p>
-
     <div class="row">
 
-      <div class="col-sm">
-        <ul class="list-unstyled">
-          <li>
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
+      <div class="col-xl-3">
+          <ul class="list-group list-group-flush">
+          {%- assign page_paths = site.header_pages -%}
+          {%- for path in page_paths -%}
+          {%- assign my_page = site.pages | where: "path", path | first -%}
+          {%- if my_page.title -%}
+          <li class="list-group-item">
+            <a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
           </li>
-          {%- if site.email -%}
-            <li>
-              <a href="mailto:{{ site.email }}">
-                {{ site.email }}
-              </a>
-            </li>
           {%- endif -%}
+        {% endfor -%}          
         </ul>
       </div>
 
 
       <div class="col-sm text-right">
         <p>{{- site.description | escape -}}</p>
-
-        <p>
-          <a href="https://nicolas-van.github.io/bootstrap-4-github-pages/">Powered by Bootstrap 4 Github Pages</a>
-        </p>
+        <p>Copyright 2018 - Sriravi Enterprises</p>
       </div>
 
     </div>

@@ -1,0 +1,18 @@
+description: Images of Sri Ravi Tools Infrastructure
+imageFolder: /assets/images/infrastructure/
+thumbsFolder: /assets/images/infrastructure/thumbs/
+images:
+  - name: 20140809_174346.jpg
+    text: CNC machine
+  - name: 20140809_174414.jpg
+    text: Workshop Floor
+  # - name: fac1.jpg
+  #   text: Outside
+
+infraList:
+  - text: CNC 5 Axis Tool and Cutter Grinding Machine
+  - text: Conventional Lathe Machines
+  - text: Conventional Milling Machines
+  - text: Conventional Turning Machines
+  - text: Conventional Tool and Cutter Grinding Machines
+  - text: Profile Projector

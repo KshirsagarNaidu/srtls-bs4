@@ -1,0 +1,35 @@
+---
+title: Infrastructure
+layout: default
+---
+<h1 class="display-4">{{ page.title }}</h1>
+<hr class="my-3">
+<div class="container-fluid my-3">
+	<div class="row">
+		<div class="card-deck">
+			{% for image in site.data.infrastructure_gallery.images %} {% assign ig = site.data.infrastructure_gallery %}
+			<div class="col-md-4 col-12 mb-4">
+				<div class="card shadow p-3 bg-secondary h-100">
+					<a href="{{ site.url }}{{ ig.imageFolder }}{{ image.name }}">
+						<img class="card-image-top" src="{{ site.url }}{{ ig.thumbsFolder }}{{ image.name }}" alt="{{ image.text }}">
+					</a>
+					<div class="card-block pt-3">
+						<p class="lead">{{ image.text }}</p>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+<div class="container-fluid my-3">
+	<div class="row">
+		<div class="col-md-4 col-12">
+			<ul class="list-group list-group-flush mb-5">
+				{% for item in site.data.infrastructure_gallery.infraList %}
+				<li class="list-group-item">{{ item.text }}</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</div>

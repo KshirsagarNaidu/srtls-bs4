@@ -1,0 +1,30 @@
+---
+layout: default
+title: SriRavi Enterprises | Index
+---
+
+<div class="jumbotron frontpage text-primary">
+  <h1 class="display-4">Manufacturers of Carbide Tools</h1>
+  <hr class="my-4">
+  <p class="lead">
+      <a href="/products/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">See our Products</a>
+  </p>
+</div>
+
+<div class="container-fluid">
+  <h1 class="text-center text-primary display-6 pb-5">Solutions to match your Industry</h1>
+  <div class="row">
+    <div class="card-group">
+      {% for item in site.data.marketing.frontpageitems %}
+      <div class="col-md-3 col-sm-6 col-12 mb-4 mx-auto">
+        <div class="card shadow p-3 bg-secondary">
+          <img class="img-resonsive" src="{{ site.url }}{{site.data.marketing.imageFolder}}{{item.filename}}" alt="{{ item.itemdescription }}">
+          <div class="card-block">
+            <h4 class="card-title text-center strong my-4">{{ item.shorttext }}</h4>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

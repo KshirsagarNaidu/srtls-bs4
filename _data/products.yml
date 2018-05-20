@@ -1,0 +1,98 @@
+description: Images of different tools
+imageFolder: /assets/images/tools/
+thumbsFolder: /assets/images/tools/thumbs/
+drills:
+  name: taps-444506_1920.jpg
+  text: Drill head
+endmills:
+  name: drill-444517_1920.jpg
+  text: End Mills
+reamers:
+  name: drilling-head-444504_1920.jpg
+  text: Reamers
+cutters:
+  name: drilling-84864_1920.jpg
+  text: Cutters
+special_tools:
+  name: drill-444510_1920.jpg
+  text: Speacial Tools
+
+# since site.collections is stored as hash and not order of input in _config.yaml, use following to maintain order
+product_order:
+- label: special_tools
+  title: "Special Tools"
+- label: drills
+  title: "Drills"
+- label: endmills
+  title: "Endmills"
+- label: reamers_holemills
+  title: "Reamers & Holemills"
+- label: cutters
+  title: "Cutters"
+
+# drills
+core_drill:
+  thumb: /assets/images/drills/thumbs/core_drill-min.png
+  img: /assets/images/drills/core_drill-min.png
+  outline: /assets/images/outlines/Core_Drill-min.png
+  text: Carbide Tipped Core Drill
+twist_drill:
+  thumb: /assets/images/drills/thumb/Drill.png
+  img: /assets/images/drills/Drill-min.png
+  outline: /assets/images/outlines/S.C_Drill-min.png
+  text: Solid Carbide Twist Drill
+slot_drill:
+  thumb: /assets/images/drills/thumb/Slot_Drill.png
+  img: /assets/images/drills/Slot_Drill.png
+  outline: /assets/images/outlines/Slot_Drill-min.png
+  text: Solid Carbide Slot Drill
+step_drill:
+  thumb: /assets/images/drills/thumb/step_drill.png
+  img: /assets/images/drills/step_drill.png
+  outline: /assets/images/outlines/Step_Drill-min.png
+  text: Solid Carbide Step Drill
+
+# endmills
+sc_endmill:
+  thumb: /assets/images/endmills/thumbs/
+  img: /assets/images/endmills/
+c_endmill:
+  thumb: /assets/images/endmills/thumbs/
+  img: /assets/images/endmills/
+bn_endmill:
+  thumb: /assets/images/endmills/thumbs/
+  img: /assets/images/endmills/
+cth_endmill:
+  thumb: /assets/images/endmills/thumbs/
+  img: /assets/images/endmills/
+
+
+# reamers & holemills
+ct_holemill:
+  thumb: /assets/images/reamers_holemills/thumbs/
+  img: /assets/images/reamers_holemills/
+ct_reamer:
+  thumb: /assets/images/reamers_holemills/thumbs/
+  img: /assets/images/reamers_holemills/
+sc_holemill:
+  thumb: /assets/images/reamers_holemills/thumbs/
+  img: /assets/images/reamers_holemills/
+sc_reamer:
+  thumb: /assets/images/reamers_holemills/thumbs/
+  img: /assets/images/reamers_holemills/
+
+# cutters
+dt_cutter:
+  thumb: /assets/images/cutters/thumbs/
+  img: /assets/images/cutters/
+s_cutter:
+  thumb: /assets/images/cutters/thumbs/
+  img: /assets/images/cutters/
+sf_cutter:
+  thumb: /assets/images/cutters/thumbs/
+  img: /assets/images/cutters/
+ts_cutter:
+  thumb: /assets/images/cutters/thumbs/
+  img: /assets/images/cutters/
+
+  # special

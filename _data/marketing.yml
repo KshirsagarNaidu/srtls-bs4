@@ -1,0 +1,23 @@
+description: Marketing Images
+imageFolder: /assets/images/marketing/resized/
+frontpageitems:
+  - filename: chair-1951921_640.jpg
+    text: Moulding Solutions
+    shorttext: Moulding
+    imagedescription: Plastic Chairs
+  - filename: rolling-pins-498431_640.jpg
+    text: Wood and Composite Material Solution
+    shorttext: Wood & Composite
+    imagedescription: Wood work
+  - filename: mining-440743_640.jpg
+    text: Metal Working Solutions
+    shorttext: Metal Working
+    imagedescription: Heavy vehicle
+  - filename: motor-2138981_640.jpg
+    text: Automotive Solutions
+    shorttext: Automotive
+    imagedescription: Engine block
+  - filename: list-1925395_640.jpg
+    text: Speacialized Solutions
+    shorttext: Speacialized
+    imagedescription: Cut paper stack

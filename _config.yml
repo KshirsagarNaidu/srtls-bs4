@@ -13,23 +13,28 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Bootstrap 4 Github Pages
+title: Sriravi Enterprises
 email: ""
 description: >- # this means to ignore newlines until "baseurl:"
-  A Bootstrap 4 start up project for Jekyll and Github Pages
+  Manufactures of High Quality Carbide Tools
 #baseurl: "" # the subpath of your site, e.g. /blog
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
-repository: "nicolas-van/bootstrap-4-github-pages"
+repository: "kshirsagarnaidu/sriravitools-bs4"
 
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # A list of the pages to display in the navigation bar
 header_pages:
+  - about-us/index.html
+  - products/index.html
+  - infrastructure/index.html
+  - contact-us/index.html
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -39,3 +44,20 @@ exclude:
   - Gemfile.lock
   - node_modules
   - update_boostrap.sh
+
+collections:
+  drills:
+    output: true
+    permalink: /:collection/:title/
+  endmills:
+    output: true
+    permalink: /:collection/:title/
+  reamers_holemills:
+    output: true
+    permalink: /:collection/:title/
+  cutters:
+    output: true
+    permalink: /:collection/:title/
+  special_tools:
+    output: true
+    permalink: /:collection/:title/
