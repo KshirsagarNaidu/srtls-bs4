@@ -3,7 +3,7 @@ layout: default
 title: SriRavi Enterprises | Index
 ---
 
-<div class="jumbotron frontpage text-primary">
+<div class="jumbotron frontpage text-primary style="background-image: url('{{site.baseurl}}//assets/images/tools/front-page.jpg'">
   <h1 class="display-4">Manufacturers of Carbide Tools</h1>
   <hr class="my-4">
   <p class="lead">
@@ -18,7 +18,7 @@ title: SriRavi Enterprises | Index
       {% for item in site.data.marketing.frontpageitems %}
       <div class="col-md-3 col-sm-6 col-12 mb-4 mx-auto">
         <div class="card shadow p-3 bg-secondary">
-          <img class="img-resonsive" src="{{ site.url }}{{site.data.marketing.imageFolder}}{{item.filename}}" alt="{{ item.itemdescription }}">
+          <img class="img-resonsive" src="{{ site.baseurl }}{{site.data.marketing.imageFolder}}{{item.filename}}" alt="{{ item.itemdescription }}">
           <div class="card-block">
             <h4 class="card-title text-center strong my-4">{{ item.shorttext }}</h4>
           </div>
