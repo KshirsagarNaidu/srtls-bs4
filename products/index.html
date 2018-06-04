@@ -5,8 +5,9 @@ layout: default
 <div class="container-fluid">
   <div class="row flex-xl-nowrap">
     <div class="col-md-4 col-sm-12">
-      <div class="sticky-top p-3 my-5 bg-light">
-        <div class="nav flex-column">
+      <h1 class="text-center display-6">Our Products</h1>
+      <div class="sticky-top p-3 my-2 bg-light justify-text-center pr-4">
+        <div class="nav flex-column text-center">
           {% for product in site.data.products.product_order %}
           <a href="#{{ product.label }}" class="list-group-item">{{ product.title }}</a>
           {% endfor %}
@@ -15,38 +16,74 @@ layout: default
       </div>
     </div>
     <div class="col-md-8 col-sm-12">
-      <h1 class="text-center display-4">Our Products</h1>
-      <hr class="my-4">
       {% for product in site.data.products.product_order %}
       <div class="container-fluid mb-4">
         <a class="text-center" name="{{ product.label }}">
           <h3>{{ product.title }}</h3>
         </a>
-        <hr class="my-4">
-        <div class="row">
-          {% assign productLabel = product.label %}
-          <div class="card-deck">
-            {% for productInfo in site[productLabel] %}
-            <div class="col-md-6 col-12 mb-4">
-              <div class="card shadow p-3 bg-secondary h-100">
-                <img class="card-image-top bg-dark" src="{{ site.baseurl }}{{ productInfo.img }}" alt="{{ productInfo.title }} | {{ product.title }}">
-                <div class="card-block pt-3">
-                  <h5 class="card-title my-3">{{ productInfo.title }}</h5>
-                  <a href="{{ site.baseurl }}{{ productInfo.url }}" class="btn btn-primary">Details</a>
-                </div>
+        <hr class="my-3">
+        <div class="row card-group">
+          {% assign productLabel = product.label %} {% assign modalIndex = 0 %} {% for productInfo in site[productLabel] %}
+          <div class="col-md-4 col-12 mb-4">
+            <div class="card shadow p-3 bg-dark text-light h-100">
+              <img class="card-image-top bg-light" src="{{ site.baseurl }}{{ productInfo.img }}" alt="{{ productInfo.title }} | {{ product.title }}">
+              <div class="card-block pt-3">
+                <h5 class="card-title my-3">{{ productInfo.title }}</h5>
+                <!-- <a href="{{ site.baseurl }}{{ productInfo.url }}" class="btn btn-primary">Details</a> -->
               </div>
+              <footer>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{{ productLabel }}{{ forloop.index }}">
+                  Details
+                </button>
+              
+                <!-- Modal -->
+                <div class="modal fade" id="{{ productLabel }}{{ forloop.index }}" tabindex="-1" role="dialog" aria-labelledby="{{ productLabel }}{{ forloop.index }}Label"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title text-dark" id="{{ productLabel }}{{ forloop.index }}Label">{{ productInfo.title}}</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="card-deck">
+                          <div class="card bg-secondary">
+                            <img src="{{ site.baseurl }}{{ productInfo.img }}" alt="{{ productInfo.title }}">
+                          </div>
+                          {% if productInfo.outline or productInfo.content %}
+                          <div class="card bg-secondary">
+                            {% if productInfo.outline %}
+                            <img class="card-img-top" src="{{ site.baseurl }}{{ productInfo.outline }}" alt="{{ productInfo.title }} outline"></img>
+                            {% endif %}
+                            <div class="card-body p-3">
+                              {{ productInfo.content }}
+                            </div>
+                          </div>
+                          {% endif %}
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </footer>
             </div>
-            {% endfor %}
           </div>
+          {% endfor %}
         </div>
       </div>
       {% endfor %}
       <div class="container-fluid mb-4">
-          <a name="services">
-            <h3>Services</h3>
-          </a>
-          <hr class="my-4">
-          <p class="lead">We also undertake resharpening/regrinding services for all kinds of solid carbide tools. - Drills, Endmills, Reamers, Counter-Sinks etc.</p>
+        <a name="services">
+          <h3>Services</h3>
+        </a>
+        <hr class="my-4">
+        <p class="lead">We also undertake resharpening/regrinding services for all kinds of solid carbide tools. - Drills, Endmills, Reamers,
+          Counter-Sinks etc.</p>
       </div>
     </div>
   </div>

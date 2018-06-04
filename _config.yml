@@ -31,6 +31,7 @@ plugins:
 
 # A list of the pages to display in the navigation bar
 header_pages:
+  - index.html
   - about-us/index.html
   - products/index.html
   - infrastructure/index.html
