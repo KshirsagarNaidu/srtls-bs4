@@ -27,41 +27,31 @@ layout: default
           <div class="col-md-4 col-12 mb-4">
             <div class="card shadow p-3 bg-dark text-light h-100">
               <img class="card-image-top bg-light" src="{{ site.baseurl }}{{ productInfo.img }}" alt="{{ productInfo.title }} | {{ product.title }}">
-              <div class="card-block pt-3">
-                <h5 class="card-title my-3">{{ productInfo.title }}</h5>
+              <div class="card-block pt-2">
+                <h6 class="card-title my-3">{{ productInfo.title }}</h6>
                 <!-- <a href="{{ site.baseurl }}{{ productInfo.url }}" class="btn btn-primary">Details</a> -->
               </div>
-              <footer>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{{ productLabel }}{{ forloop.index }}">
-                  Details
-                </button>
-              
+              <footer></footer>
+                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{{ productLabel }}{{ forloop.index }}">
+                  View
+                 </button>
                 <!-- Modal -->
                 <div class="modal fade" id="{{ productLabel }}{{ forloop.index }}" tabindex="-1" role="dialog" aria-labelledby="{{ productLabel }}{{ forloop.index }}Label"
                   aria-hidden="true">
-                  <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-dialog modal-md" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title text-dark" id="{{ productLabel }}{{ forloop.index }}Label">{{ productInfo.title}}</h5>
+                        <h5 class="modal-title text-dark text-center" id="{{ productLabel }}{{ forloop.index }}Label">{{ productInfo.title}}</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
                       <div class="modal-body">
                         <div class="card-deck">
-                          <div class="card bg-secondary">
-                            <img src="{{ site.baseurl }}{{ productInfo.img }}" alt="{{ productInfo.title }}">
-                          </div>
-                          {% if productInfo.outline or productInfo.content %}
-                          <div class="card bg-secondary">
-                            {% if productInfo.outline %}
-                            <img class="card-img-top" src="{{ site.baseurl }}{{ productInfo.outline }}" alt="{{ productInfo.title }} outline"></img>
-                            {% endif %}
-                            <div class="card-body p-3">
-                              {{ productInfo.content }}
-                            </div>
-                          </div>
-                          {% endif %}
+                            <div class="card bg-secondary">
+                                <img src="{{ site.baseurl }}{{ productInfo.img }}" alt="{{ productInfo.title }}">
+                              </div>
+                                
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
