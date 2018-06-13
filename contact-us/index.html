@@ -1,16 +1,23 @@
 ---
 title: Contact Us
-longitude: 13.073322
-latitude: 77.523727
+longitude: 13.073704
+latitude: 77.523813
 layout: default
 staticmapkey: AIzaSyB6L-DHugbCpvST7XUPcvlLHBOcfhkxKiQ
 ---
 <!-- Main -->
 <div class="container-fluid">
 	<!-- <row> -->
-		<div class="row">
+	<div class="row">
 		<div class="col-md-6 col-12">
-			<h1 class="display-6 my-3">Contact Address</h1>
+			<h3 class="my-3">Map</h3>
+			<a class="" href="//goo.gl/maps/WkY6hmqQYWo">
+				<img src="//maps.googleapis.com/maps/api/staticmap?center={{page.longitude}},{{page.latitude}}&zoom=15&size=640x640&markers=13.073322,77.523727&key={{page.staticmapkey}}"
+				 alt="Sri Ravi Location in Google Maps" />
+			</a>
+		</div>
+		<div class="col-md-6 col-12">
+			<h3 class="my-3">Contact Address</h3>
 			<address class="p-3 bg-secondary">
 				<p>
 					Sriravi Enterprises
@@ -29,21 +36,13 @@ staticmapkey: AIzaSyB6L-DHugbCpvST7XUPcvlLHBOcfhkxKiQ
 					Primary Email -
 					<a href="mailto:sriravi_entp@yahoo.com">sriravi_entp@yahoo.com</a>
 					<br> Alternate Email -
-					<a href="snrmgr@sriravitools.in">snrmgr@sriravitools.in</a>
+					<a href='&#109;ail&#116;&#111;&#58;&#115;nrmgr%40sr%69&#37;72%&#54;1v&#105;%74&#37;6F%6F%6C&#115;&#46;in'>snr&#109;g&#114;&#64;s&#114;iravi&#116;oo&#108;s&#46;in</a>
 				</p>
 				<footer>For Support -
-					<a href="sales@sriravitools.in">sales@sriravitools.in</a>
+					<a href='mailto&#58;sale%73&#64;sri&#37;72a%76itool%73&#46;i&#37;6E'>sa&#108;&#101;s&#64;sriravitools&#46;&#105;n</a>
 				</footer>
 			</address>
-		</div>
-		<div class="col-md-6 col-12">
-			<h3 class="my-3">Map</h3>
-			<a class="" href="//goo.gl/maps/j7NBKL8gyno">
-				<img src="//maps.googleapis.com/maps/api/staticmap?center={{page.longitude}},{{page.latitude}}&zoom=15&size=640x640&markers=13.073322,77.523727&key={{page.staticmapkey}}"
-				 alt="Sri Ravi Location in Google Maps" />
-			</a>
-		</div>
-		<div class="col-md-6 col-12">
+
 			<h3 class="my-3">Contact Form</h3>
 			<form class="p-3 bg-secondary" method="POST" action="https://formspree.io/sriravi_entp@yahoo.com">
 				<div class="form-row">
@@ -66,7 +65,5 @@ staticmapkey: AIzaSyB6L-DHugbCpvST7XUPcvlLHBOcfhkxKiQ
 				<button type="submit" value="Send" class="btn btn-primary">Submit</button>
 			</form>
 		</div>
-	<!-- </row> -->
 	</div>
 </div>
-			
