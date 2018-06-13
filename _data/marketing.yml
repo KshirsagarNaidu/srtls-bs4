@@ -1,23 +1,23 @@
 description: Marketing Images
 imageFolder: /assets/images/marketing/resized/
 frontpageitems:
-  - filename: chair-1951921_640.jpg
-    text: Moulding Solutions
-    shorttext: Moulding
-    imagedescription: Plastic Chairs
-  - filename: rolling-pins-498431_640.jpg
-    text: Wood and Composite Material Solution
-    shorttext: Wood & Composite
-    imagedescription: Wood work
-  - filename: mining-440743_640.jpg
-    text: Metal Working Solutions
-    shorttext: Metal Working
-    imagedescription: Heavy vehicle
-  - filename: motor-2138981_640.jpg
-    text: Automotive Solutions
+  - filename: aircraft-1023968_1920.jpg
+    text: Aerospace Industry
+    shorttext: Aerospace
+    imagedescription: Aerospace Solutions
+  - filename: rsz_rktkn-77442-unsplash.jpg
+    text: Automotive Industry
     shorttext: Automotive
-    imagedescription: Engine block
-  - filename: list-1925395_640.jpg
-    text: Speacialized Solutions
-    shorttext: Speacialized
-    imagedescription: Cut paper stack
+    imagedescription: Automotive Component Machining
+  - filename: woodworking-3367926_1920.jpg
+    text: Woodworking Industry
+    shorttext: Woodworking
+    imagedescription: Woodworking Tools
+  - filename: black-and-white-cogs-gears-159298.jpg
+    text: Textile Industry
+    shorttext: Textile
+    imagedescription: Textile Machinery Parts
+  - filename: army-military-museum-9250.jpg
+    text: Defence Industry
+    shorttext: Defence
+    imagedescription: artillery , Tanks , Rifles
