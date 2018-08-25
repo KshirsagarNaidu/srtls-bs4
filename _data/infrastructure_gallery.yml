@@ -2,9 +2,9 @@ description: Images of Sri Ravi Tools Infrastructure
 imageFolder: /assets/images/infrastructure/
 thumbsFolder: /assets/images/infrastructure/thumbs/
 images:
-  - name: IMG_3707.jpg
+  - name: IMG_3707_test.jpg
     text: 
-  - name: IMG_3708.jpg
+  - name: IMG_3708_test.jpg
     text: 
   # - name: fac1.jpg
   #   text: Outside
