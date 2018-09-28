@@ -25,18 +25,19 @@ layout: default
         <div class="row card-group">
           {% assign productLabel = product.label %} {% assign modalIndex = 0 %} {% for productInfo in site[productLabel] %}
           <div class="col-md-4 col-12 mb-4">
-            <div class="card shadow p-3 bg-dark text-light h-100">
+            <div class="card d-flex flex-column shadow p-3 bg-dark text-light h-100">
               <img class="card-image-top bg-light" src="{{ site.baseurl }}{{ productInfo.img }}" alt="{{ productInfo.title }} | {{ product.title }}">
               <div class="card-block pt-2">
                 <h6 class="card-title my-3">{{ productInfo.title }}</h6>
                 <!-- <a href="{{ site.baseurl }}{{ productInfo.url }}" class="btn btn-primary">Details</a> -->
               </div>
+              {% assign productHash = productInfo.title | url_encode | replace: "+", "_" %}
               <footer></footer>
-                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{{ productLabel }}{{ forloop.index }}">
+                 <a type="button" href="#{{ productHash }}" class="btn btn-primary mt-auto" data-toggle="modal">
                   View
-                 </button>
+                 </a>
                 <!-- Modal -->
-                <div class="modal fade" id="{{ productLabel }}{{ forloop.index }}" tabindex="-1" role="dialog" aria-labelledby="{{ productLabel }}{{ forloop.index }}Label"
+                <div class="modal fade" id="{{ productHash }}" tabindex="-1" role="dialog" aria-labelledby="{{ productLabel }}{{ forloop.index }}Label"
                   aria-hidden="true">
                   <div class="modal-dialog modal-md" role="document">
                     <div class="modal-content">
@@ -78,3 +79,30 @@ layout: default
     </div>
   </div>
 </div>
+<script>
+  // $( document ).ready(function(){
+  //   if(window.location.hash) {
+  //     var hash = window.location.hash;
+  //     $(hash).modal('toggle');
+  //   }
+  // });
+  $(document).ready(function(){
+   $(window.location.hash).modal('show');
+   $('a[data-toggle="modal"]').click(function(){
+      window.location.hash = $(this).attr('href');
+   });
+});
+   $('button[data-dismiss="modal"]').click(function(){
+     var original = window.location.href.substr(0, window.location.href.indexOf('#'))
+     history.replaceState({}, document.title, original);
+ });
+
+     function revertToOriginalURL() {
+        var original = window.location.href.substr(0, window.location.href.indexOf('#'))
+        history.replaceState({}, document.title, original);
+    }
+
+    $('.modal').on('hidden.bs.modal', function () {
+        revertToOriginalURL();
+    });
+  </script>

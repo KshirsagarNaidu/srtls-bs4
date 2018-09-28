@@ -45,6 +45,11 @@ exclude:
   - Gemfile.lock
   - node_modules
   - update_boostrap.sh
+  # - _cutters
+  # - _drills
+  # - _endmills
+  # - _reamers_holemills
+  # - _special_tools
 
 collections:
   drills:
