@@ -1,5 +1,5 @@
 ---
-layout: product_detail
+# layout: product_detail
 title: Carbide Tipped Reamer
 img: /assets/images/reamers_holemills/CT_Reamer-min.png
 outline: /assets/images/outlines/C.T_Reamer-min.png

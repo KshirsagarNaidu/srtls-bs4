@@ -1,5 +1,5 @@
 ---
-layout: product_detail
+# layout: product_detail
 title: T-Slot Cutter
 img: /assets/images/cutters/t_slot_cutter-min.png
 outline: /assets/images/outlines/T-Slot_Cutter-min.png

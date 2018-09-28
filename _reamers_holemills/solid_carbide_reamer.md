@@ -1,5 +1,5 @@
 ---
-layout: product_detail
+# layout: product_detail
 title: Solid Carbide Reamer
 img: /assets/images/reamers_holemills/reamer_sc-min.png
 outline: /assets/images/outlines/S.C_Reamer-min.png

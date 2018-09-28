@@ -1,5 +1,5 @@
 ---
-layout: product_detail
+# layout: product_detail
 title: Reamer
 img: /assets/images/reamers_holemills/reamer-min.png
 ---

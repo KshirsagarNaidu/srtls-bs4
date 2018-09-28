@@ -1,5 +1,5 @@
 ---
-layout: product_detail
+# layout: product_detail
 title: Carbide Dead Center
 img: /assets/images/special/dead_center-min.png
 ---

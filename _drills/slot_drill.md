@@ -1,5 +1,5 @@
 ---
-layout: product_detail
+# layout: product_detail
 title: Solid Carbide Slot Drill
 img: /assets/images/drills/slot_drill-min.png
 outline: /assets/images/outlines/slot_drill-outline.png

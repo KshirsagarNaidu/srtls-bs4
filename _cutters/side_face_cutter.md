@@ -1,5 +1,5 @@
 ---
-layout: product_detail
+# layout: product_detail
 title: Side and Face Cutter (C.T)
 img: /assets/images/cutters/Side_and_Face_cutter2-min.png
 outline: /assets/images/outlines/Shell_Cutter-min.png

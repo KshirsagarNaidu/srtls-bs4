@@ -1,5 +1,5 @@
 ---
-layout: product_detail
+# layout: product_detail
 title: Chamfering  Endmill
 img: /assets/images/endmills/chamfering-min.png
 outline: /assets/images/outlines/Chamfering_Cutter-min.png

@@ -1,5 +1,5 @@
 ---
-layout: product_detail
+# layout: product_detail
 title: Solid Carbide Step Drill
 img: /assets/images/drills/twist_drill-min.png
 outline: /assets/images/outlines/twist_drill-outline.png

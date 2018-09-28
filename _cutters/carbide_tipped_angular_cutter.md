@@ -1,5 +1,5 @@
 ---
-layout: product_detail
+# layout: product_detail
 title: Carbide Tipped Angular Cutter
 img: /assets/images/cutters/dovetail_cutter-min.png
 outline: /assets/images/outlines/Angular_Cutter-min.png

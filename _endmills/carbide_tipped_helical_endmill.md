@@ -1,5 +1,5 @@
 ---
-layout: product_detail
+# layout: product_detail
 title: Carbide Tipped Helical Endmill
 img: /assets/images/endmills/ct_endmill-min.png
 outline: /assets/images/outlines/C.T_Endmill-min.png
