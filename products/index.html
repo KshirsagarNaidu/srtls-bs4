@@ -31,7 +31,7 @@ layout: default
                 <h6 class="card-title my-3">{{ productInfo.title }}</h6>
                 <!-- <a href="{{ site.baseurl }}{{ productInfo.url }}" class="btn btn-primary">Details</a> -->
               </div>
-              {% assign productHash = productInfo.title | url_encode | replace: "+", "_" %}
+              {% assign productHash = productInfo.title | downcase | url_encode | replace: "+", "_" %}
               <footer></footer>
                  <a type="button" href="#{{ productHash }}" class="btn btn-primary mt-auto" data-toggle="modal">
                   View
