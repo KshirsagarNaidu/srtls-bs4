@@ -1,0 +1,18 @@
+---
+title: Clientele
+layout: default
+---
+<h1 class="display-5">{{ page.title }}</h1>
+<hr class="my-3">
+<div class="container-fluid my-3">
+	<div class="card-columns">
+		{% for image in site.data.clientele.images %} {% assign cl = site.data.clientele %}
+		
+		<div class="card shadow p-3 bg-secondary h-100">
+			<!-- <a href="{{ site.baseurl }}{{ cl.imageFolder }}{{ image.name }}"> -->
+			<img class="card-image" src="{{ site.baseurl }}{{ cl.imageFolder }}{{ image.name }}" alt="{{ image.text }}">
+			<!-- </a> -->
+		</div>
+		{% endfor %}
+	</div>
+</div>

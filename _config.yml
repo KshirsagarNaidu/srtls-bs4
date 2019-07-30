@@ -34,7 +34,7 @@ header_pages:
   - index.html
   - about-us/index.html
   - products/index.html
-  - infrastructure/index.html
+  - clientele/index.html
   - contact-us/index.html
 
 # Exclude from processing.

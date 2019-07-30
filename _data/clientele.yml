@@ -1,0 +1,14 @@
+description: Images of Sri Ravi Tools Clientele
+imageFolder: /assets/images/clientele/
+thumbsFolder: /assets/images/clientele/thumbs/
+images:
+  - name: bdl.png
+    text: BDL
+  - name: beml.png
+    text: BEML
+  - name: bhel.png
+    text: BHEL
+  - name: caterpiller.jpg
+    text: Caterpiller
+  - name: kennametal.jpg
+    text: Kennametal
