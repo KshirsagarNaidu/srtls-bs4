@@ -1,0 +1,9 @@
+User-agent: * 
+Disallow: /endmills/
+Disallow: /drills/
+Disallow: /reamers_holemills/
+Disallow: /special_tools/
+Disallow: /cutters/
+Disallow: /includes/
+Disallow: /data/
+Disallow: /layouts/
