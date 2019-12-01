@@ -20,3 +20,13 @@ $container-max-widths: (
   xl: 1160px
 ) !default;
 
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+  /* IE10+ specific styles go here */  
+  .card-deck .card {
+    display: block;
+  }
+  img.card-image-top {
+    height: 100% !important;
+  }
+}
