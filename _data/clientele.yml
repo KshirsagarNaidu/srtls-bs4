@@ -4,11 +4,31 @@ thumbsFolder: /assets/images/clientele/thumbs/
 images:
   - name: bdl.png
     text: BDL
-  - name: beml.png
+  - name: beml.jpg
     text: BEML
+  - name: bharat_forge.jpg
+    text: bharat_forge
   - name: bhel.png
     text: BHEL
+  - name: brakes_india.jpg
+    text: brakesindia
   - name: caterpiller.jpg
     text: Caterpiller
+  - name: GCL.jpg
+    text: GCL
+  - name: HMT.jpg
+    text: HMT
+  - name: Indian_Railways.png
+    text: Indian Railways
   - name: kennametal.jpg
     text: Kennametal
+  - name: LMW.jpg
+    text: LMW
+  - name: moog.jpg
+    text: moog
+  - name: ofb.jpg
+    text: ofb
+  - name: sahney.jpg
+    text: sahney
+  - name: tata.jpg
+    text: tata
